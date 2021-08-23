@@ -18,12 +18,12 @@ public class UserController {
     @GetMapping("/getAll")
     public Result getAll(){
         List<User> userlist = userService.getAll();
-        return new Result(StatusCode.OK,"查询成功",true,userlist);
+        return new Result(true,StatusCode.OK,"查询成功",userlist);
     }
     @GetMapping
     public Result getUsers(){
         List<User> userlist = userService.getAll();
-        return new Result(StatusCode.OK,"查询成功",true,userlist);
+        return new Result(true,StatusCode.OK,"查询成功",userlist);
     }
     @GetMapping("/load/{username}")
     public User findUserInfo(@PathVariable("username") String username){

@@ -37,7 +37,7 @@ hystrix:
           #如果enabled设置为false，则请求超时交给ribbon控制
           enabled: true
         isolation:
-          strategy: SEMAPHORE
+          strategy: SEMAPHORE #THREAD
           thread:
             # 熔断器超时时间，默认：1000/毫秒
             timeoutInMilliseconds: 20000

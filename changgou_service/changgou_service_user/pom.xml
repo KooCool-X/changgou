@@ -9,48 +9,31 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>changgou_user_oauth</artifactId>
+    <artifactId>changgou_service_user</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
     <dependencies>
-        <!--查询数据库数据-->
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>changgou_common_db</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-data</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-oauth2</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-security</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>changgou_service_user_api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!--thymeleaf-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
         </dependency>
     </dependencies>
 
