@@ -26,7 +26,9 @@
         <module name="changgou_service_search_api" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="16" />
+    <bytecodeTargetLevel target="16">
+      <module name="changgou_service_user" target="8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
